@@ -1,0 +1,26 @@
+{
+  "name": "playwright_pom_demo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "smoke": "npx playwright test -g @smoke",
+    "regression": "npx playwright test -g @regression",
+    "headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "npx allure open allure-report",
+    "allure:serve": "npx allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.0",
+    "allure": "^3.14.2",
+    "allure-playwright": "^3.10.2"
+  }
+}
